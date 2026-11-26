@@ -1,0 +1,572 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #FAF8F5;
+    color: #1A1917;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* --- IDENTIDADE VISUAL ONYX --- */
+.onyx-logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.onyx-brand-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.onyx-title {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #1A1917;
+    line-height: 1;
+    letter-spacing: -0.5px;
+}
+
+.onyx-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.78rem;
+    color: #78746E;
+    margin-top: 4px;
+    letter-spacing: 0.4px;
+}
+
+.dot-square {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #F46A16;
+}
+
+/* --- TELA DE LOGIN --- */
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #121110 0%, #23211E 100%);
+}
+
+.login-card {
+    background: #FAF8F5;
+    width: 100%;
+    max-width: 410px;
+    padding: 36px 32px;
+    border-radius: 16px;
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
+    border: 1px solid #EAE5DD;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.badge-admin {
+    display: inline-block;
+    background: #FFF0E6;
+    color: #D95507;
+    border: 1px solid #FFD6BC;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.8px;
+}
+
+.input-group {
+    margin-bottom: 16px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #1A1917;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 11px 12px;
+    background-color: #FFFFFF;
+    border: 1px solid #D6D1C9;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #1A1917;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    outline: none;
+    border-color: #F46A16;
+    box-shadow: 0 0 0 3px rgba(244, 106, 22, 0.15);
+}
+
+.btn-primary {
+    background-color: #F46A16;
+    color: #FFFFFF;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.login-card .btn-primary {
+    width: 100%;
+    padding: 13px;
+}
+
+.btn-primary:hover {
+    background-color: #D95507;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #D6D1C9;
+    color: #1A1917;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-outline:hover {
+    background: #EFECE6;
+}
+
+.alert-error {
+    background: #FEE2E2;
+    color: #B91C1C;
+    border: 1px solid #FCA5A5;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.hint-text {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #78746E;
+    margin-top: 18px;
+}
+
+/* --- DASHBOARD --- */
+.topbar {
+    background: #1A1917;
+    color: #FFFFFF;
+    padding: 14px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #F46A16;
+}
+
+.topbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.app-icon-mini {
+    width: 38px;
+    height: 38px;
+    background-color: #F46A16;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbar-title-group {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.topbar-brand h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.topbar-sub {
+    font-size: 0.82rem;
+    color: #A8A29E;
+}
+
+.badge-role {
+    background: rgba(244, 106, 22, 0.18);
+    color: #FF8C42;
+    border: 1px solid rgba(244, 106, 22, 0.35);
+    font-size: 0.74rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 12px;
+    margin-left: 6px;
+}
+
+.topbar .btn-outline {
+    color: #FFFFFF;
+    border-color: #44403C;
+}
+
+.topbar .btn-outline:hover {
+    background: #292524;
+    border-color: #F46A16;
+}
+
+.main-content {
+    max-width: 1140px;
+    margin: 32px auto;
+    padding: 0 20px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.section-header h2 {
+    font-size: 1.5rem;
+    color: #1A1917;
+}
+
+.section-header p {
+    color: #78746E;
+    font-size: 0.9rem;
+}
+
+.header-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px 14px;
+    background: #FFFFFF;
+    border: 1px solid #D6D1C9;
+    border-radius: 8px;
+    width: 280px;
+    font-size: 0.9rem;
+    color: #1A1917;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #F46A16;
+}
+
+/* --- CARDS DE CLIENTES --- */
+.clientes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.cliente-card {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 22px;
+    border: 1px solid #E7E2DA;
+    box-shadow: 0 2px 8px rgba(26, 25, 23, 0.04);
+    transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cliente-card:hover {
+    transform: translateY(-2px);
+    border-color: #F46A16;
+    box-shadow: 0 10px 22px rgba(26, 25, 23, 0.08);
+}
+
+.cliente-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.cliente-card h3 {
+    font-size: 1.15rem;
+    color: #1A1917;
+}
+
+.status-ativo {
+    background: #FFF0E6;
+    color: #D95507;
+    font-size: 0.74rem;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: 6px;
+}
+
+.cliente-info {
+    font-size: 0.88rem;
+    color: #57534E;
+    margin-bottom: 18px;
+    line-height: 1.55;
+}
+
+.btn-acessar-loja {
+    width: 100%;
+    padding: 11px;
+    background: #1A1917;
+    border: 1px solid #1A1917;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-acessar-loja:hover {
+    background: #F46A16;
+    border-color: #F46A16;
+    color: #FFFFFF;
+}
+
+.card-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.card-actions .btn-outline {
+    flex: 1;
+}
+
+.btn-excluir {
+    color: #B91C1C;
+    border-color: #FCA5A5;
+}
+
+.btn-excluir:hover {
+    background: #FEE2E2;
+}
+
+.btn-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.acoes-produto {
+    display: flex;
+    gap: 6px;
+    flex-wrap: nowrap;
+}
+
+.btn-sm {
+    padding: 7px 11px;
+    font-size: 0.85rem;
+}
+
+/* --- TABELA DE PRODUTOS --- */
+.header-with-back {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-back {
+    background: #FFFFFF;
+    border: 1px solid #D6D1C9;
+    color: #1A1917;
+    padding: 9px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-back:hover {
+    background: #1A1917;
+    color: #FFFFFF;
+    border-color: #1A1917;
+}
+
+.table-container {
+    background: #FFFFFF;
+    border-radius: 12px;
+    border: 1px solid #E7E2DA;
+    overflow-x: auto;
+}
+
+.produtos-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.produtos-table th {
+    background: #F5F2ED;
+    padding: 14px 16px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #57534E;
+    border-bottom: 1px solid #E7E2DA;
+}
+
+.produtos-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #F5F2ED;
+    font-size: 0.92rem;
+    color: #1A1917;
+}
+
+.input-preco-edit {
+    width: 110px;
+    padding: 7px 10px;
+    border: 1px solid #D6D1C9;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #1A1917;
+}
+
+.input-preco-edit:focus {
+    outline: none;
+    border-color: #F46A16;
+}
+
+.btn-salvar-preco {
+    background: #F46A16;
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-salvar-preco:hover {
+    background: #D95507;
+}
+
+.toast {
+    background: #1A1917;
+    color: #FFFFFF;
+    border-left: 5px solid #F46A16;
+    padding: 13px 18px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* --- MODAL --- */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(26, 25, 23, 0.72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-box {
+    background: #FAF8F5;
+    padding: 26px;
+    border-radius: 14px;
+    border: 1px solid #E7E2DA;
+    width: 100%;
+    max-width: 420px;
+}
+
+.modal-box h3 {
+    margin-bottom: 16px;
+    color: #1A1917;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.input-moeda.input-preco-edit {
+    width: 130px;
+}
+
+/* --- NAVEGAÇÃO ENTRE PORTAIS --- */
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.topbar-nav {
+    display: flex;
+    gap: 6px;
+}
+
+.topbar-nav a {
+    color: #D6D1C9;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 7px 12px;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.topbar-nav a:hover {
+    background: #292524;
+    color: #FF8C42;
+}
+
+a.btn-acessar-loja,
+a.btn-outline,
+a.btn-back {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.btn-back {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.header-actions a.btn-outline {
+    display: inline-block;
+}

@@ -1,0 +1,1 @@
+Copie toda a sua pasta img/ original (logo.png, hero.jpg, calabresa.jpg, itens/, etc.) para dentro desta pasta img/.
